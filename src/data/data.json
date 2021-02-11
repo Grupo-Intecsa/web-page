@@ -116,7 +116,7 @@
             "name": "Inditex"
         },
         {
-            "img": "img/testimonials/cicsa.png",
+            "img": "img/testimonials/carso.png",
             "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
             "name": "Grupo Carso"
         }
@@ -147,7 +147,6 @@
         "phone": "+52 55 70 11 97",
         "email": "contacto@grupintecsa.com",
         "facebook": "fb.com",
-        "twitter": "twitter.com",
         "youtube": "youtube.com",
         "maps": "https://goo.gl/maps/ahavvUSB89XmrQtSA"
     },

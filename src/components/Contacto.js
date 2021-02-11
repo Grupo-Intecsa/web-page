@@ -100,11 +100,6 @@ const Contacto = ({ data }) => {
                     </a>
                 </li>
                 <li>
-                    <a href={data ? data.twitter : "/"}>
-                    <i className="fa fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
                     <a href={data ? data.youtube : "/"}>
                     <i className="fa fa-youtube"></i>
                     </a>
