@@ -1,0 +1,188 @@
+{
+    "Header": {
+
+        "title": "Grupo Intecsa",
+        "paragraph": "TRANSFORMAMOS LA ENERGÍA EN LUZ...Y LA LUZ EN ENERGÍA TAMBIÉN."
+
+    },
+    "About": {
+        "paragraph": "Es un conjunto de empresas especializadas en el campo de la construcción en el área de ingeniería eléctrica. Contamos con el equipo humano y tecnológico capaz de ofrecer a nuestros clientes: atención directa, respuesta inmediata y conocimiento integral de todos los aspectos relacionados con su proyecto.",
+        "Why": [
+            "Lorem ipsum dolor",
+            "Tempor incididunt",
+            "Lorem ipsum dolor",
+            "Incididunt ut labore"
+        ],
+        "Why2": [
+            "Aliquip ex ea commodo",
+            "Lorem ipsum dolor",
+            "Exercitation ullamco",
+            "Lorem ipsum dolor"
+        ]
+    },
+    "Services": [
+        {
+            "title": "Producción",
+            "text": "Tenemos una amplia variedad de artículos que maquinamos o fabricamos para el área de instalación eléctrica. Como son:",
+            "list": [" zapatas", " registros", " tapas", " acometidas a ducto", " brakets", " cajas para balastro", " cajas pos", " curvas", " derivaciones", " coples para ducto tipo 'U'", " chicotes flexibles", " estañado de zapatas para terminales", " marcos niveladores", " placas puntas de pararrayos", " soportes y mechas para aterrizar."],
+            "imgArray": ["img/portfolio/03-small.jpg"],
+            "url": "google.com"
+        },
+        {
+            "title": "Artículos para Tableros",
+            "text": "Somos distribuidores integradores y proveedores autorizados de ABB, contamos con una cantidad considerable de stock para suplir en tiempo y forma. Puedes consultar más productos en nuestra tienda en línea ITA-INTECSA",
+            "imgArray": ["img/portfolio/03-small.jpg"],
+            "url": "google.com"
+        },
+        {
+            "title": "Ingeniería Eléctrica",
+            "text": "Ofrecemos soluciones a su necesidad en el ramo eléctrico, nuestros clientes abarcan centros comerciales, hospitales, fábricas y otras industrias. Tenemos la capacidad de pro royectar, diseñar, canalizar e instalar todo lo referente a media y baja tensión. Además de analizadores de redes (Calidad de la energía), Filtros de armónicos y pruebas a tableros eléctricos.",
+            "imgArray": ["img/portfolio/03-small.jpg"],
+            "url": "google.com",
+            "alt": "Foto de Negocios creado por senivpetro - www.freepik.es"
+        },
+        {
+            "title": "Renta de Generadores",
+            "text": "Renta de generadores, Sub-estaciones, móviles y transformmadores. Compruebe usted nuestras tarifas y políticas. Le ofrecemos un servicio confiable y profesional.",
+            "imgArray": ["img/portfolio/03-small.jpg"],
+            "url": "google.com"
+        },
+        {
+            "title": "Canalizaciones Eléctricas",
+            "text": "Tenemos amplia experiencia en esta área. Hemos realizado esta actividad para hospitales, centros comerciales e industria. Tenemos toda la infraestructura para esta transmisión y distribución de energía. Nuestras instalaciones son seguras y confiables Además entre otros productos ofrecemos ductos y ductos especiales.",
+            "imgArray": ["img/portfolio/03-small.jpg"],
+            "url": "google.com"
+        },
+        {
+            "title": "Luces Provisionales",
+            "text": "Nuestras luces que están protegidas de rompimiento y tienen interruptores de circuito para fallas de tierra. Éstas son sus características:",
+            "list": [
+                "4 Tubos de 2:40 mts. de alto haciendo un cuadrado de 40 x 40cm.",
+                "4 Lámparas de prueba a vapor de 2x32 watts.",                
+                "1 Tablero de QO2 de 127 volts.",                
+                "2 Interruptores de 1x20.",                
+                "4 Contactos polarizados a 127 volts.",                
+                "1 Caja de ¾ galvanizada.",                
+                "2 Chicotes de 50 cms. con conector hembra y macho.",                
+                "1 Extensión de 20 mts. de uso rudo de 3x10.",                
+                "Unicanal de 4x4 cms.",
+                "Además podemos proveer el tablero para conexión."
+            ],
+            "imgArray": ["img/portfolio/03-small.jpg"],
+            "url": "google.com"
+        },
+        {
+            "title": "Seguridad y Alarmas",
+            "text": "Un sistema de alarma es un elemento de seguridad pasiva. Esto significa que no evitan una situación anormal, pero sí son capaces de advertir de ella, cumpliendo así, una función disuasoria frente a poistema de seguridad y Alarmas",
+            "list": [
+                "La intrusión de personas.",
+                "Inicio de fuego.",
+                "El desbordamiento de un tanque.",
+                "La presencia de agentes tóxicos.",
+                "Cualquier situación que sea anormal para el usuario."
+            ],
+            "text2": "Son capaces además de reducir el tiempo de ejecución de las acciones a tomar en función del problema presentado, reduciendo así las pérdidas.",
+            "imgArray": ["img/portfolio/03-small.jpg"],
+            "url": "google.com"
+        },
+        {
+            "title": "Sistema de pararayos",
+            "text": "No solo podemos hacer la instalación, sino incluso vendemos el kit de mastil, punta base, retenida u oSistema de pararayos",
+            "imgArray": ["img/portfolio/03-small.jpg"],
+            "url": "google.com"
+        },
+        {
+            "title": "Renta de andamios",
+            "text": "Estos también los manufacturamos y están en base al estándar nacional.",
+            "imgArray": ["img/portfolio/03-small.jpg"],
+            "url": "google.com"
+        },
+        {
+            "title": "Onka",
+            "text": "Somos distribuidores máster de esta gran marca de origen Turco, cuyas máximas son: calidad, economía y servicio.  Ellos están en el mercado desde 1986 y sus productos se venden a nivel internacional, cuentan con certificados estándar a nivel mundial. Algunos de sus artículos son: conectores, clemas, miniconectores, rieles din etc",
+            "imgArray": ["img/portfolio/03-small.jpg"],
+            "url": "google.com"
+        }
+
+    ],
+    "Testimonials": [{
+            "img": "img/testimonials/01.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "John Doe"
+        },
+        {
+            "img": "img/testimonials/02.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "Johnathan Doe"
+        },
+        {
+            "img": "img/testimonials/03.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "John Doe"
+        },
+        {
+            "img": "img/testimonials/04.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "Johnathan Doe"
+        },
+        {
+            "img": "img/testimonials/05.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "John Doe"
+        },
+        {
+            "img": "img/testimonials/06.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "Johnathan Doe"
+        }
+    ],
+    "Team": [{
+            "img": "img/team/01.jpg",
+            "name": "John Doe",
+            "job": "Director"
+        },
+        {
+            "img": "img/team/02.jpg",
+            "name": "Mike Doe",
+            "job": "Senior Designer"
+        }, {
+            "img": "img/team/03.jpg",
+            "name": "Jane Doe",
+            "job": "Senior Designer"
+        },
+        {
+            "img": "img/team/04.jpg",
+            "name": "Karen Doe",
+            "job": "Project Manager"
+        }
+    ],
+    "Contact": {
+        "address": "4321 California St, San Francisco, CA 12345 ",
+        "phone": "+52 55 70 11 97",
+        "email": "contacto@grupintecsa.com",
+        "facebook": "fb.com",
+        "twitter": "twitter.com",
+        "youtube": "youtube.com"
+    },
+    "Features": [{
+            "icon": "fa fa-comments-o",
+            "title": "Industrial Connect",
+            "text": "Asesoría profesional y respaldo necesario para cubrir sus necesidades en materia de seguridad y equipo contra incendio, todos nuestros productos están elaborados bajo los más estrictos estándares de calidad, siempre rigiéndonos por las Normas Oficiales Mexicanas y controles de calidad internacionales."
+        },
+        {
+            "icon": "fa fa-bullhorn",
+            "title": "Canalización y Soportería",
+            "text": "Nos dedicamos a la transformación de la materia prima, destinándola a diferentes áreas de producción eléctrica. Entre nuestros productos están: Acometidas a ducto, brakets, caja pos, chicote flexible, coples para ducto, derivación T, registros, tapas, zapatas, marco nivelador, kit de mastil, punta y retenida de pararrayos, etcétera."
+        },
+        {
+            "icon": "fa fa-group",
+            "title": "Inmobiliara Eguel",
+            "text": "RENTA Flotilla de transportes, provisionales eléctricos, andamiaje, bienes raices y plantas de energía."
+        },
+        {
+            "icon": "fa fa-magic",
+            "title": "Instalaciones y Técnica",
+            "text": "Instalaciónes eléctricas en industrias y comercios. Dotamos de energía eléctrica a edificios, instalaciones, lugares públicos, infraestructuras, etc. Incluimos los equipos necesarios para asegurar su correcto funcionamiento y la conexión con los aparatos eléctricos correspondientes."
+        }
+    ]
+}

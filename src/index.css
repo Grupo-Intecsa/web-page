@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,68 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.logoBanner{
+  width: auto;
+  height: 7vh;
+}
+
+.modalImg {
+  height: auto;
+  width: auto;
+}
+
+.imgAbout{
+  max-height: 5vh;
+  width: 5vh;
+}
+
+/* accordion styles */
+@media only screeen and (max-width: 600px){
+  .accordion--container{
+    display: flex;
+    align-items: center;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin-bottom: 1vh;
+    
+  }
+}
+
+.accordion--container{
+  padding: 2vh;
+}
+
+.accordion--detail{
+  color: rgb(48, 48, 48);
+}
+
+.accordion--detail--container{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  justify-content: center;
+  margin: 1.3vh;
+  /* max-width: 80vh; */
+  font-family: 'Questrial', sans-serif;
+  font-size: 2.3rem;
+}
+
+.accordion--title{
+
+  color: rgb(71, 71, 71);
+  font-size: x-large;
+  font-family: 'Hammersmith One', sans-serif;
+  
+}
+
+.mb--3{
+  margin-top: 30px;
+}
+
+.dflex--center{
+  display: flex;
+  right: 100%;
+  
 }
