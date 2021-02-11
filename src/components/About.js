@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ModalProducts from '../reusable/ModalProducts'
 
 const About = ({ data }) => {
-    
+
+    const [ modal, setModal ] = useState(false)
+        
     return (
-        <div>
+
+
+    <div>
     <div id="about">
     <div className="container">
         <div className="row">
@@ -12,11 +17,11 @@ const About = ({ data }) => {
             <div className="about-text">
             <h2>¿Quiénes Somos?</h2>
             <p>{data ? data.paragraph : 'loading...'}</p>
-            <button className="btn btn-custom btn-lg">Nuestro Curriculim</button>
+            <button onClick={() =>  setModal(true)} className="btn btn-custom btn-lg">Nuestro Curriculim</button>
             <div className="list-style">
                 <div className="col-lg-6 col-sm-6 col-xs-12">
                 <ul>
-                    {/* {data ? data.Why.map((d, i) => <li  key={`${d}-${i}`}>{d}</li>) : 'loading'} */}
+                    <ModalProducts modal={modal} setModal={setModal} />
                 </ul>
                 </div>
                 <div className="col-lg-6 col-sm-6 col-xs-12">

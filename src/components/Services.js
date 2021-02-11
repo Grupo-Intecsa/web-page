@@ -1,9 +1,6 @@
 import React from 'react'
 import ServicesMenu from '../reusable/ServicesMenu'
 
-
-
-
 const Services = ({ data }) => {
 
         
