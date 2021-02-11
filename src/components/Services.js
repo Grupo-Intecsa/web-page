@@ -9,7 +9,7 @@ const Services = ({ data }) => {
         
         <div className="container">
         <div className="section-title">
-        <h2>Nuestros servicios</h2>
+        <h2>Nuestros productos y servicios</h2>
         {/* <p>
             Estas son algunas de nuestros ultimos trabajos.
         </p> */}
@@ -22,7 +22,7 @@ const Services = ({ data }) => {
             <Button className="button-seeler">Mercado Libre</Button> */}
             <button class="btn btn-amazon btn-sep icon-cart">Amazon   </button>
             <button class="btn btn-ml btn-sep icon-cart">Mercado Libre</button>
-            <button class="btn btn-git btn-sep icon-send">Catálogo Virtual</button>
+            <button class="btn btn-git btn-sep icon-send">Catálogo</button>
         </div>
                 
             {data.map((service, index) => {

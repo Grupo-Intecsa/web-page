@@ -9,6 +9,7 @@ import GitCarrousel from './GitCarrousel'
 const ServicesMenu = ({ data }) => {
 
     return(
+    <div className="container-fluid dflex--center">
     <div className="accordion--container">
     <Accordion>
     <AccordionSummary
@@ -40,6 +41,7 @@ const ServicesMenu = ({ data }) => {
         
     </AccordionDetails>
     </Accordion>
+    </div>
     </div>
     )
 }

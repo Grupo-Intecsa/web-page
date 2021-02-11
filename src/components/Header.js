@@ -16,10 +16,10 @@ const Header = ({ data }) =>{
                 {data ? data.paragraph : "Loading"}
                 </p>
                 <a
-                href="#features"
+                href="#services"
                 className="btn btn-custom btn-lg page-scroll"
                 >
-                Learn More
+                Nuestros productos
                 </a>{" "}
             </div>
             </div>

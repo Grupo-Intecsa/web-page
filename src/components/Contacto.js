@@ -1,7 +1,9 @@
 import React from 'react'
 
 
+
 const Contacto = ({ data }) => {
+    
     return(
         <div>
     <div id="contact">
@@ -107,11 +109,17 @@ const Contacto = ({ data }) => {
                     <i className="fa fa-youtube"></i>
                     </a>
                 </li>
+                <li>
+                    <a href={data ? data.maps : "/"}>
+                    <i className="fa fa-map-marker"></i>
+                    </a>
+                </li>
                 </ul>
             </div>
             </div>
         </div>
         </div>
+
     </div>
     <div id="footer">
         <div className="container text-center">

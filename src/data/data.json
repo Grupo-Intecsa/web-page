@@ -106,34 +106,19 @@
 
     ],
     "Testimonials": [{
-            "img": "img/testimonials/01.jpg",
+            "img": "img/testimonials/liver.png",
             "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "John Doe"
+            "name": "Liverpool"
         },
         {
-            "img": "img/testimonials/02.jpg",
+            "img": "img/testimonials/inditex.png",
             "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "Johnathan Doe"
+            "name": "Inditex"
         },
         {
-            "img": "img/testimonials/03.jpg",
+            "img": "img/testimonials/cicsa.png",
             "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "John Doe"
-        },
-        {
-            "img": "img/testimonials/04.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "Johnathan Doe"
-        },
-        {
-            "img": "img/testimonials/05.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "John Doe"
-        },
-        {
-            "img": "img/testimonials/06.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "Johnathan Doe"
+            "name": "Grupo Carso"
         }
     ],
     "Team": [{
@@ -157,12 +142,14 @@
         }
     ],
     "Contact": {
-        "address": "4321 California St, San Francisco, CA 12345 ",
+        "address": "Raúl Zárate Machuca Cuevitas, 01220 Ciudad de México, CDMX",
+        "link": "https://goo.gl/maps/ahavvUSB89XmrQtSA",
         "phone": "+52 55 70 11 97",
         "email": "contacto@grupintecsa.com",
         "facebook": "fb.com",
         "twitter": "twitter.com",
-        "youtube": "youtube.com"
+        "youtube": "youtube.com",
+        "maps": "https://goo.gl/maps/ahavvUSB89XmrQtSA"
     },
     "Features": [{
             "icon": "fa fa-comments-o",

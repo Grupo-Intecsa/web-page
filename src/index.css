@@ -27,24 +27,16 @@ code {
 }
 
 .imgAbout{
-  max-height: 5vh;
-  width: 5vh;
-}
+  display: flex;
+  justify-content: center;
+  height: 25%;
+  width: auto;
 
-/* accordion styles */
-@media only screeen and (max-width: 600px){
-  .accordion--container{
-    display: flex;
-    align-items: center;
-    padding-left: 2vh;
-    padding-right: 2vh;
-    margin-bottom: 1vh;
-    
-  }
 }
 
 .accordion--container{
-  padding: 2vh;
+  width: 80%;
+  margin-bottom: 1vh;
 }
 
 .accordion--detail{
@@ -76,6 +68,7 @@ code {
 
 .dflex--center{
   display: flex;
+  justify-content: center;
   right: 100%;
   
 }

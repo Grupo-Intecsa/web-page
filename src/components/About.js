@@ -17,7 +17,7 @@ const About = ({ data }) => {
             <div className="about-text">
             <h2>¿Quiénes Somos?</h2>
             <p>{data ? data.paragraph : 'loading...'}</p>
-            <button onClick={() =>  setModal(true)} className="btn btn-custom btn-lg">Nuestro Curriculim</button>
+            <a href="https://grupointecsa.com/curriculum/CV2.pdf" target="_blank" rel="bookmark" ><button className="btn btn-custom btn-lg">Nuestro Curriculim</button></a>
             <div className="list-style">
                 <div className="col-lg-6 col-sm-6 col-xs-12">
                 <ul>

@@ -8,7 +8,7 @@ export default function GitpdfReader({ setModal }){
         scale="1.2"
         navigation={false}
         document={{
-        url: 'https://arxiv.org/pdf/quant-ph/0410100.pdf'
+        url: 'https://grupointecsa.com/curriculum/CV2.pdf'
         }} 
         />
         </div>
