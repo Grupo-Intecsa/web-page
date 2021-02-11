@@ -27,9 +27,9 @@ code {
 }
 
 .imgAbout{
-  display: flex;
+  position: absolute;
   justify-content: center;
-  height: 25%;
+  height: 100px;
   width: auto;
 
 }

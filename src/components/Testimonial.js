@@ -12,9 +12,9 @@ const Testimonial = ({ data }) =>{
                 ? data.map((d, i) => (
                     <div key={`${d.name}-${i}`} className="col-md-4">
                         <div className="testimonial">
-                        <div className="imgAbout img-thumbnail">
+                        <div className="">
                             {" "}
-                            <img src={d.img} alt="" />{" "}
+                            <img className="img-responsive" src={d.img} alt="" />{" "}
                         </div>
                         <div className="testimonial-content">
                             {/* <p>"{d.text}"</p> */}
