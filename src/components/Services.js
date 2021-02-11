@@ -20,9 +20,7 @@ const Services = ({ data }) => {
         <h3>Puedes consultar nuestros productos en:</h3>    
             {/* <Button className="button-seeler">Amazon</Button>
             <Button className="button-seeler">Mercado Libre</Button> */}
-            <button class="btn btn-amazon btn-sep icon-cart">Amazon   </button>
-            <button class="btn btn-ml btn-sep icon-cart">Mercado Libre</button>
-            <button class="btn btn-git btn-sep icon-send">Catálogo</button>
+            <button class="btn btn-git btn-sep icon-send">Catálogo Virutal</button>
         </div>
                 
             {data.map((service, index) => {
