@@ -12,7 +12,7 @@ const Testimonial = ({ data }) =>{
                 ? data.map((d, i) => (
                     <div key={`${d.name}-${i}`} className="col-md-4">
                         <div className="testimonial">
-                        <div className="imgAbout">
+                        <div className="imgAbout img-thumbnail">
                             {" "}
                             <img src={d.img} alt="" />{" "}
                         </div>
