@@ -22,38 +22,50 @@
     },
     "Services": [
         {
+            "slug": "git",
+            "title": "Grupo Intecsa",
+            "text": "En nuestro catálogo virtual encontraras fotos, detalles de nuestros productos, servicios, y mucho más.",
+            "imgArray": ["img/portfolio/carrLogoIta.png"]
+        },
+        {   
+            "slug": "produccion",
             "title": "Producción",
             "text": "Tenemos una amplia variedad de artículos que maquinamos o fabricamos para el área de instalación eléctrica. Como son:",
             "list": [" zapatas", " registros", " tapas", " acometidas a ducto", " brakets", " cajas para balastro", " cajas pos", " curvas", " derivaciones", " coples para ducto tipo 'U'", " chicotes flexibles", " estañado de zapatas para terminales", " marcos niveladores", " placas puntas de pararrayos", " soportes y mechas para aterrizar."],
-            "imgArray": ["img/portfolio/03-small.jpg"],
+            "imgArray": ["img/portfolio/03-large.jpg", "img/portfolio/03-small.jpg", "img/portfolio/03-small.jpg"],
             "url": "google.com"
         },
         {
+            "slug": "tableros",
             "title": "Artículos para Tableros",
             "text": "Somos distribuidores integradores y proveedores autorizados de ABB, contamos con una cantidad considerable de stock para suplir en tiempo y forma. Puedes consultar más productos en nuestra tienda en línea ITA-INTECSA",
             "imgArray": ["img/portfolio/03-small.jpg"],
             "url": "google.com"
         },
-        {
+        {   
+            "slug": "ingenieria",
             "title": "Ingeniería Eléctrica",
-            "text": "Ofrecemos soluciones a su necesidad en el ramo eléctrico, nuestros clientes abarcan centros comerciales, hospitales, fábricas y otras industrias. Tenemos la capacidad de pro royectar, diseñar, canalizar e instalar todo lo referente a media y baja tensión. Además de analizadores de redes (Calidad de la energía), Filtros de armónicos y pruebas a tableros eléctricos.",
+            "text": "Ofrecemos soluciones a su necesidad en el ramo eléctrico, nuestros clientes abarcan centros comerciales, hospitales, fábricas y otras industrias. Tenemos la capacidad de proroyectar, diseñar, canalizar e instalar todo lo referente a media y baja tensión. Además de analizadores de redes (Calidad de la energía), Filtros de armónicos y pruebas a tableros eléctricos.",
             "imgArray": ["img/portfolio/03-small.jpg"],
             "url": "google.com",
             "alt": "Foto de Negocios creado por senivpetro - www.freepik.es"
         },
-        {
+        {   
+            "slug": "generadores",
             "title": "Renta de Generadores",
-            "text": "Renta de generadores, Sub-estaciones, móviles y transformmadores. Compruebe usted nuestras tarifas y políticas. Le ofrecemos un servicio confiable y profesional.",
+            "text": "Renta de generadores, Transformadores, Compruebe usted nuestras tarifas y políticas. Le ofrecemos un servicio confiable y profesional.",
             "imgArray": ["img/portfolio/03-small.jpg"],
             "url": "google.com"
         },
         {
+            "slug": "canalizacion",
             "title": "Canalizaciones Eléctricas",
             "text": "Tenemos amplia experiencia en esta área. Hemos realizado esta actividad para hospitales, centros comerciales e industria. Tenemos toda la infraestructura para esta transmisión y distribución de energía. Nuestras instalaciones son seguras y confiables Además entre otros productos ofrecemos ductos y ductos especiales.",
             "imgArray": ["img/portfolio/03-small.jpg"],
             "url": "google.com"
         },
         {
+            "slug": "provicionales",
             "title": "Luces Provisionales",
             "text": "Nuestras luces que están protegidas de rompimiento y tienen interruptores de circuito para fallas de tierra. Éstas son sus características:",
             "list": [
@@ -72,6 +84,7 @@
             "url": "google.com"
         },
         {
+            "slug": "seguridad",
             "title": "Seguridad y Alarmas",
             "text": "Un sistema de alarma es un elemento de seguridad pasiva. Esto significa que no evitan una situación anormal, pero sí son capaces de advertir de ella, cumpliendo así, una función disuasoria frente a poistema de seguridad y Alarmas",
             "list": [
@@ -86,18 +99,21 @@
             "url": "google.com"
         },
         {
-            "title": "Sistema de pararayos",
+            "slug": "pararrayos",
+            "title": "Sistema de pararrayos",
             "text": "No solo podemos hacer la instalación, sino incluso vendemos el kit de mastil, punta base, retenida u oSistema de pararayos",
             "imgArray": ["img/portfolio/03-small.jpg"],
             "url": "google.com"
         },
-        {
+        {   
+            "slug": "andamios",
             "title": "Renta de andamios",
             "text": "Estos también los manufacturamos y están en base al estándar nacional.",
             "imgArray": ["img/portfolio/03-small.jpg"],
             "url": "google.com"
         },
         {
+            "slug": "onka",
             "title": "Onka",
             "text": "Somos distribuidores máster de esta gran marca de origen Turco, cuyas máximas son: calidad, economía y servicio.  Ellos están en el mercado desde 1986 y sus productos se venden a nivel internacional, cuentan con certificados estándar a nivel mundial. Algunos de sus artículos son: conectores, clemas, miniconectores, rieles din etc",
             "imgArray": ["img/portfolio/03-small.jpg"],
@@ -106,7 +122,7 @@
 
     ],
     "Testimonials": [{
-            "img": "img/testimonials/liver.png",
+            "img": "img/testimonials/liverpool.png",
             "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
             "name": "Liverpool"
         },
@@ -119,6 +135,26 @@
             "img": "img/testimonials/carso.png",
             "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
             "name": "Grupo Carso"
+        },
+        {
+            "img": "img/testimonials/modelo.png",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "Grupo Modelo"
+        },
+        {
+            "img": "img/testimonials/alcione.png",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "Alcione"
+        },
+        {
+            "img": "img/testimonials/naturgy.png",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "Naturgy"
+        },
+        {
+            "img": "img/testimonials/ica.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "ICA"
         }
     ],
     "Team": [{

@@ -5,7 +5,7 @@ export default function Carrouse({ img }){
         
     return(
         <Carousel className="dflex--center">
-            {img.map(item => <img src={item} alt="mucho texto" className="img-thumbnail" />)}
+            {img.map((item, index) => <img key={`${index}`} src={item} alt="mucho texto" className="img-thumbnail" />)}
         </Carousel>
     )
 }

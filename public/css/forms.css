@@ -1,0 +1,40 @@
+
+.form--control--select {
+    border: none;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 2vh;
+    font-weight: 700;
+    color: black;
+    width: 90%;
+    padding: 20px 50px;
+    background-color: azure;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.form--control--label{
+    font-size: x-large;
+}
+
+.accordion--detail--container{
+    margin: 1.3vh;
+    /* max-width: 80vh; */
+    font-family: 'Questrial', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1vh;
+    padding: 2vh;
+}
+
+.accordion--container{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 90%;
+    margin-bottom: 1vh;
+    background-color: violet;
+}
+
+.text--left{
+    text-align: start;
+}

@@ -64,8 +64,18 @@ const Navigation = () => {
                 </li>
                 {/* TODO agregar un dropdown de idiomas */}
                 <li>
-                <div className="idioma">Español</div>
-                <div className="idioma">Ingles</div>
+                <div className="select--lenguaje input">
+                <select>
+                    <optgroup>
+                        <option>
+                            Español
+                        </option>
+                        <option>
+                            Ingles
+                        </option>
+                    </optgroup>
+                </select>
+                </div>
                 </li>
             </ul>
             </div>

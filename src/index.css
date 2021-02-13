@@ -34,34 +34,6 @@ code {
 
 }
 
-.accordion--container{
-  width: 80%;
-  margin-bottom: 1vh;
-}
-
-.accordion--detail{
-  color: rgb(48, 48, 48);
-}
-
-.accordion--detail--container{
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-  justify-content: center;
-  margin: 1.3vh;
-  /* max-width: 80vh; */
-  font-family: 'Questrial', sans-serif;
-  font-size: 2.3rem;
-}
-
-.accordion--title{
-
-  color: rgb(71, 71, 71);
-  font-size: x-large;
-  font-family: 'Hammersmith One', sans-serif;
-  
-}
-
 .mb--3{
   margin-top: 30px;
 }
@@ -71,4 +43,27 @@ code {
   justify-content: center;
   right: 100%;
   
+}
+
+.select--lenguaje{
+  width: 100%;
+  padding: 1.5vh;
+  border: none;
+  border-radius: 4px;
+  
+}
+
+.message--contact--success{
+  display: flex;
+  align-items: center;
+  font-size: xx-large;
+  background-color: rgba(52, 228, 46, 0.363);
+  height: 30%;
+  border-radius: 2%;
+}
+
+.text--red{
+  color: rgb(172, 61, 61);
+  font-size: x-large;
+  font-family: 'Hammersmith One', sans-serif;
 }

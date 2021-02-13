@@ -1,5 +1,3 @@
-import React, { useState } from 'react'
-
 import './App.css';
 import './index.css'
 
@@ -16,19 +14,15 @@ import jsonData from './data/data.json'
 
 function App() {
 
-  const [ data, setData ] =useState(jsonData)
-
-  console.log(setData, jsonData)
-
   return (
     <div className="App">
       <Navigation />
-      <Header data={data.Header} />
-      <Features data={data.Features} />
-      <About data={data.About} />
-      <Services data={data.Services} />
-      <Testimonial data={data.Testimonials} />
-      <Contacto data={data.Contact} />
+      <Header data={jsonData.Header} />
+      <Features data={jsonData.Features} />
+      <About data={jsonData.About} />
+      <Services data={jsonData.Services} />
+      <Testimonial data={jsonData.Testimonials} />
+      <Contacto data={jsonData.Contact} />
     </div>
   );
 }

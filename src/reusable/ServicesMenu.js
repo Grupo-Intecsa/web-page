@@ -2,15 +2,14 @@ import React from 'react'
 import { Accordion, AccordionSummary, AccordionDetails } from '@material-ui/core'
 import { ExpandMore } from '@material-ui/icons'
 
-
 import GitCarrousel from './GitCarrousel'
-
 
 const ServicesMenu = ({ data }) => {
 
     return(
     <div className="container-fluid dflex--center">
     <div className="accordion--container">
+    
     <Accordion>
     <AccordionSummary
         expandIcon={<ExpandMore />}
@@ -28,7 +27,7 @@ const ServicesMenu = ({ data }) => {
                 <div className="accordion--detail">
                 {data.text}
                 {data?.list && (
-                    data.list.map(item => <li>{item}</li>)
+                    data.list.map((item, index) => <li key={`${item}${index}`}>{item}</li>)
                         )
                     }
                 </div>

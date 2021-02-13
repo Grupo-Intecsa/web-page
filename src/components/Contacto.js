@@ -1,11 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useForm } from 'react-hook-form'
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from "yup";
+import axios from 'axios'
+
+
+const validationSchema = yup.object().shape({
+    name: yup.string().required(),
+    email: yup.string().email().required(),
+    phone: yup.string().required(),
+    message: yup.string().required(),
+})
 
 
 
 const Contacto = ({ data }) => {
-    
+
+    const [ messageDone, setMessageDone ] = useState(false)
+    const [ loading, setLoading ] = useState([])
+
+    const { register, handleSubmit, errors } =useForm({
+        resolver: yupResolver(validationSchema)
+    })
+
+    const onSubmit = (payload) =>{
+        
+        let message = 'Enviando mensaje...'
+        
+        setLoading(loading => [...loading, message ])
+
+        axios.post('https://api-sgo.herokuapp.com/api/v1/message', payload )
+        .then(() => setMessageDone(true))
+                
+    }
+
     return(
-        <div>
+    <div>
     <div id="contact">
         <div className="container">
         <div className="col-md-8">
@@ -16,29 +46,46 @@ const Contacto = ({ data }) => {
                 Porfavor llena los siguientes campos y personal especializado se pondrá en contacto con usted
                 </p>
             </div>
-            <form name="sentMessage" id="contactForm" noValidate>
+            {!messageDone ? <form name="contactForm" onSubmit={handleSubmit(onSubmit)}>
                 <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-4">
                     <div className="form-group">
                     <input
                         type="text"
                         id="name"
+                        name="name"
+                        ref={register}
                         className="form-control"
-                        placeholder="Name"
-                        required="required"
+                        placeholder="Nombre"
                     />
-                    <p className="help-block text-danger"></p>
+                    <p className="help-block text-danger">{errors.name?.message}</p>
                     </div>
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-4">
                     <div className="form-group">
                     <input
                         type="email"
                         id="email"
+                        name="email"
+                        ref={register}
                         className="form-control"
                         placeholder="Email"
-                        required="required"
                     />
+                    <p className="help-block text-danger">{errors.email?.message}</p>
+                    <p className="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div className="col-md-4">
+                    <div className="form-group">
+                    <input
+                        type="phone"
+                        id="phone"
+                        name="phone"
+                        ref={register}
+                        className="form-control"
+                        placeholder="Numero teléfonico"
+                    />
+                    <p className="help-block text-danger">{errors.phone?.message}</p>
                     <p className="help-block text-danger"></p>
                     </div>
                 </div>
@@ -46,19 +93,21 @@ const Contacto = ({ data }) => {
                 <div className="form-group">
                 <textarea
                     name="message"
+                    ref={register}
                     id="message"
                     className="form-control"
                     rows="4"
                     placeholder="Message"
-                    required
                 ></textarea>
+                <p className="help-block text-danger">{errors.message?.message}</p>
                 <p className="help-block text-danger"></p>
                 </div>
-                <div id="success"></div>
                 <button type="submit" className="btn btn-custom btn-lg">
                 Enviar
                 </button>
-            </form>
+                <div>{loading && <span className="text--red">{loading?.length > 0 && loading[0]}</span>}</div>
+                
+            </form> : <div className="message--contact--success">Mensaje enviado: pronto un asesor se pondrá en contacto con usted</div>}
             </div>
         </div>
         <div className="col-md-3 col-md-offset-1 contact-info">
