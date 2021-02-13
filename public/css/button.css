@@ -41,40 +41,10 @@
     -webkit-font-smoothing: antialiased;
   }
   
-  
-  /* Icon separator */
-  .btn-sep {
-    padding: 25px 60px 25px 120px;
-  }
-  
+
   .btn-sep:before {
     background: rgba(0,0,0,0.15);
   }
-  
-  /* Button 1
-  .btn-1 {
-    background: #3498db;
-    color: #fff;
-  }
-  
-  .btn-1:hover {
-    background: #2980b9;
-  }
-  
-  .btn-1:active {
-    background: #2980b9;
-    top: 2px;
-  }
-  
-  .btn-1:before {
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    line-height: 3;
-    font-size: 140%;
-    width: 60px;
-  } */
 
   /* amazon */
   .btn-amazon {
@@ -150,9 +120,7 @@
     font-size: 140%;
     width: 60px;
   }
-  
- 
-  
+    
   /* Icons */
   
   .icon-cart:before {
