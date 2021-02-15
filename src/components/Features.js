@@ -12,7 +12,7 @@ const Features = ({ data }) => {
             ? data.map((d,i) => (
                 <div  key={`${d.title}-${i}`} className="col-xs-6 col-md-3">
                 {" "}
-                <i className={d.icon}></i>
+                <img src={d.logo} alt="foto de icono" height={87} className="logo--background" />
                 <h3>{d.title}</h3>
                 <p>{d.text}</p>
                 </div>

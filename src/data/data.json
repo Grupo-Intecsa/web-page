@@ -25,14 +25,14 @@
             "slug": "git",
             "title": "Grupo Intecsa",
             "text": "En nuestro catálogo virtual encontraras fotos, detalles de nuestros productos, servicios, y mucho más.",
-            "imgArray": ["img/portfolio/carrLogoIta.png"]
+            "imgArray": ["img/portfolio/carrouse_ita01.png"]
         },
         {   
             "slug": "produccion",
             "title": "Producción",
             "text": "Tenemos una amplia variedad de artículos que maquinamos o fabricamos para el área de instalación eléctrica. Como son:",
             "list": [" zapatas", " registros", " tapas", " acometidas a ducto", " brakets", " cajas para balastro", " cajas pos", " curvas", " derivaciones", " coples para ducto tipo 'U'", " chicotes flexibles", " estañado de zapatas para terminales", " marcos niveladores", " placas puntas de pararrayos", " soportes y mechas para aterrizar."],
-            "imgArray": ["img/portfolio/03-large.jpg", "img/portfolio/03-small.jpg", "img/portfolio/03-small.jpg"],
+            "imgArray": ["img/portfolio/03-small.jpg", "img/portfolio/03-small.jpg"],
             "url": "google.com"
         },
         {
@@ -187,22 +187,22 @@
         "maps": "https://goo.gl/maps/ahavvUSB89XmrQtSA"
     },
     "Features": [{
-            "icon": "fa fa-comments-o",
+            "logo": "img/logo/ico_industrial.svg",
             "title": "Industrial Connect",
             "text": "Asesoría profesional y respaldo necesario para cubrir sus necesidades en materia de seguridad y equipo contra incendio, todos nuestros productos están elaborados bajo los más estrictos estándares de calidad, siempre rigiéndonos por las Normas Oficiales Mexicanas y controles de calidad internacionales."
         },
         {
-            "icon": "fa fa-bullhorn",
+            "logo": "img/logo/ico_cana.svg",
             "title": "Canalización y Soportería",
             "text": "Nos dedicamos a la transformación de la materia prima, destinándola a diferentes áreas de producción eléctrica. Entre nuestros productos están: Acometidas a ducto, brakets, caja pos, chicote flexible, coples para ducto, derivación T, registros, tapas, zapatas, marco nivelador, kit de mastil, punta y retenida de pararrayos, etcétera."
         },
         {
-            "icon": "fa fa-group",
+            "logo": "img/logo/ico_eguel.svg",
             "title": "Inmobiliara Eguel",
             "text": "RENTA Flotilla de transportes, provisionales eléctricos, andamiaje, bienes raices y plantas de energía."
         },
         {
-            "icon": "fa fa-magic",
+            "logo": "img/logo/ico_ita.svg",
             "title": "Instalaciones y Técnica",
             "text": "Instalaciónes eléctricas en industrias y comercios. Dotamos de energía eléctrica a edificios, instalaciones, lugares públicos, infraestructuras, etc. Incluimos los equipos necesarios para asegurar su correcto funcionamiento y la conexión con los aparatos eléctricos correspondientes."
         }

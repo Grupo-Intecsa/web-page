@@ -68,3 +68,10 @@ code {
   font-size: x-large;
   font-family: 'Hammersmith One', sans-serif;
 }
+
+.logo--background{
+  background-image: radial-gradient(#627AFF, #5DA3FC);
+  border-radius: 100%;
+  padding: 2vh;
+  height: 15vh;
+}
