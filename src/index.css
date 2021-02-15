@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
 
 
 body {
@@ -18,8 +19,8 @@ code {
 
 .logoBanner{
   width: auto;
-  height: 7vh;
-}
+  font-size: x-large;
+  font-family: 'Montserrat Alternates', sans-serif;}
 
 .modalImg {
   height: auto;

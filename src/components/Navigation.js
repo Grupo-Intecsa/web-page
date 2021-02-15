@@ -18,6 +18,7 @@ const Navigation = () => {
                 <span className="icon-bar"></span>{" "}
             </button>
             <a className="navbar-brand page-scroll" href="#page-top">
+                {/* <img src="img/logo/logo_completoGD.svg" alt="logo de sitio" /> */}
                 Grupo Intecsa
             </a>{" "}
             </div>
@@ -63,7 +64,7 @@ const Navigation = () => {
                 </a>
                 </li>
                 {/* TODO agregar un dropdown de idiomas */}
-                <li>
+                {/* <li>
                 <div className="select--lenguaje input">
                 <select>
                     <optgroup>
@@ -76,7 +77,7 @@ const Navigation = () => {
                     </optgroup>
                 </select>
                 </div>
-                </li>
+                </li> */}
             </ul>
             </div>
         </div>

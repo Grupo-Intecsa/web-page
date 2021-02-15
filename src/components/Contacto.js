@@ -29,7 +29,7 @@ const Contacto = ({ data }) => {
         
         setLoading(loading => [...loading, message ])
 
-        axios.post('https://api-sgo.herokuapp.com/api/v1/message', payload )
+        axios.post('https://api-sgo.herokuapp.com/api/v1/email', payload )
         .then(() => setMessageDone(true))
                 
     }
