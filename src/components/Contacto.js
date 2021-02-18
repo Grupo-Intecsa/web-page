@@ -1,117 +1,26 @@
-import React, { useState } from 'react'
-import { useForm } from 'react-hook-form'
-import { yupResolver } from '@hookform/resolvers/yup';
-import * as yup from "yup";
-import axios from 'axios'
+import React from 'react'
 
 
-const validationSchema = yup.object().shape({
-    name: yup.string().required(),
-    email: yup.string().email().required(),
-    phone: yup.string().required(),
-    message: yup.string().required(),
-})
+const Footer = ({ data }) => {
 
-
-
-const Contacto = ({ data }) => {
-
-    const [ messageDone, setMessageDone ] = useState(false)
-    const [ loading, setLoading ] = useState([])
-
-    const { register, handleSubmit, errors } =useForm({
-        resolver: yupResolver(validationSchema)
-    })
-
-    const onSubmit = (payload) =>{
-        
-        let message = 'Enviando mensaje...'
-        
-        setLoading(loading => [...loading, message ])
-
-        axios.post('https://api-sgo.herokuapp.com/api/v1/email', payload )
-        .then(() => setMessageDone(true))
-                
-    }
 
     return(
     <div>
-    <div id="contact">
+        
+    <div id="footer">
         <div className="container">
         <div className="col-md-8">
             <div className="row">
-            <div className="section-title">
-                <h2>¿Necesitas más información?</h2>
-                <p>
-                Porfavor llena los siguientes campos y personal especializado se pondrá en contacto con usted
-                </p>
+            <div>
+                <h2>Contacto</h2>
             </div>
-            {!messageDone ? <form name="contactForm" onSubmit={handleSubmit(onSubmit)}>
-                <div className="row">
-                <div className="col-md-4">
-                    <div className="form-group">
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        ref={register}
-                        className="form-control"
-                        placeholder="Nombre"
-                    />
-                    <p className="help-block text-danger">{errors.name?.message}</p>
-                    </div>
-                </div>
-                <div className="col-md-4">
-                    <div className="form-group">
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        ref={register}
-                        className="form-control"
-                        placeholder="Email"
-                    />
-                    <p className="help-block text-danger">{errors.email?.message}</p>
-                    <p className="help-block text-danger"></p>
-                    </div>
-                </div>
-                <div className="col-md-4">
-                    <div className="form-group">
-                    <input
-                        type="phone"
-                        id="phone"
-                        name="phone"
-                        ref={register}
-                        className="form-control"
-                        placeholder="Numero teléfonico"
-                    />
-                    <p className="help-block text-danger">{errors.phone?.message}</p>
-                    <p className="help-block text-danger"></p>
-                    </div>
-                </div>
-                </div>
-                <div className="form-group">
-                <textarea
-                    name="message"
-                    ref={register}
-                    id="message"
-                    className="form-control"
-                    rows="4"
-                    placeholder="Message"
-                ></textarea>
-                <p className="help-block text-danger">{errors.message?.message}</p>
-                <p className="help-block text-danger"></p>
-                </div>
-                <button type="submit" className="btn btn-custom btn-lg">
-                Enviar
-                </button>
-                <div>{loading && <span className="text--red">{loading?.length > 0 && loading[0]}</span>}</div>
-                
-            </form> : <div className="message--contact--success">Mensaje enviado: pronto un asesor se pondrá en contacto con usted</div>}
+            <div className="map">
+            <iframe title="myMapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5322.527002406184!2d-99.22696839255828!3d19.38668419189787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201adefab9513%3A0xa5936acc13a69c0d!2sRa%C3%BAl%20Z%C3%A1rate%20Machuca%2011%2C%20Cuevitas%2C%20%C3%81lvaro%20Obreg%C3%B3n%2C%2001220%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1613650539398!5m2!1ses!2smx" frameborder="0" style={{ "border": "0;" }} allowfullscreen="" aria-hidden="false" tabindex="0" width="100%" height="100%"  ></iframe>
+            </div>
             </div>
         </div>
         <div className="col-md-3 col-md-offset-1 contact-info">
-            <div className="contact-item">
+            <div>
             <h3>Información de Contacto</h3>
             <p>
                 <span>
@@ -131,9 +40,23 @@ const Contacto = ({ data }) => {
             <div className="contact-item">
             <p>
                 <span>
+                <i className="fa fa-phone"></i> Teléfono
+                </span>{" "}
+                {data ? data.phone2 : "loading"}
+            </p>
+            </div>
+            <div className="contact-item">
+            <p>
+                <span>
                 <i className="fa fa-envelope-o"></i> Email
                 </span>{" "}
                 {data ? data.email : "loading"}
+            </p>
+            <p>
+                <span>
+                <i className="fa fa-envelope-o"></i> Email
+                </span>{" "}
+                {data ? data.email2 : "loading"}
             </p>
             </div>
         </div>
@@ -153,27 +76,20 @@ const Contacto = ({ data }) => {
                     <i className="fa fa-youtube"></i>
                     </a>
                 </li>
-                <li>
-                    <a href={data ? data.maps : "/"}>
-                    <i className="fa fa-map-marker"></i>
-                    </a>
-                </li>
                 </ul>
+            </div>
+            <div className="container text-center">
+                <p>
+                    &copy; 2021 Carlos Chávez React Template / GRUPO INTECSA es una marca Registrada
+                </p>
             </div>
             </div>
         </div>
         </div>
 
-    </div>
-    <div id="footer">
-        <div className="container text-center">
-        <p>
-            &copy; 2021 Carlos Chávez React Template / GRUPO INTECSA es una marca Registrada
-        </p>
         </div>
-    </div>
     </div>
     )
 }
 
-export default Contacto
+export default Footer

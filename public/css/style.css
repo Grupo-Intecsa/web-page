@@ -192,7 +192,28 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+	-webkit-animation-duration: 10s;
+	animation-duration: 10s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
 }
+
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+
 .intro .overlay {
 	background: rgba(0,0,0,0.2);
 }
@@ -290,7 +311,7 @@ header .intro-text {
 #services {
 	padding: 100px 0;
 	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-	color: #fff;
+	/* color: #fff; */
 }
 #services .service-desc {
 	margin: 10px 10px 20px;
@@ -298,6 +319,10 @@ header .intro-text {
 #services h2 {
 	color: #fff;
 }
+#services h3 {
+	color: rgb(43, 101, 226);
+}
+
 #services .section-title h2::after {
 	position: absolute;
 	content: "";
@@ -432,24 +457,25 @@ header .intro-text {
 	color: #888;
 }
 /* Contact Section */
-#contact {
+#footer {
 	padding: 100px 0 60px 0;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+	background-blend-mode: multiply;
 	color: rgba(255,255,255,.75);
 }
-#contact .section-title {
+#footer .section-title {
 	margin-bottom: 40px;
 }
-#contact .section-title p {
+#footer .section-title p {
 	font-size: 16px;
 }
-#contact h2 {
+#footer h2 {
 	color: #fff;
 	margin-top: 10px;
 	margin-bottom: 15px;
 	padding-bottom: 15px;
 }
-#contact .section-title h2::after {
+#footer .section-title h2::after {
 	position: absolute;
 	content: "";
 	background: rgba(255,255,255,.3);
@@ -458,26 +484,26 @@ header .intro-text {
 	bottom: 0;
 	left: 30px;
 }
-#contact h3 {
+#footer h3 {
 	color: #fff;
 	margin-top: 80px;
 	margin-bottom: 25px;
 	padding-bottom: 20px;
 	font-weight: 400;
 }
-#contact form {
+#footer form {
 	padding-top: 20px;
 }
-#contact .text-danger {
+#footer .text-danger {
 	color: #cc0033;
 	text-align: left;
 }
-#contact .btn-custom {
+#footer .btn-custom {
 	margin: 30px 0;
 	background: transparent;
 	border: 2px solid #fff;
 }
-#contact .btn-custom:hover {
+#footer .btn-custom:hover {
 	color: #1f386e;
 	background: #fff;
 }
@@ -487,7 +513,7 @@ label {
 	font-family: 'Open Sans', sans-serif;
 	float: left;
 }
-#contact .form-control {
+#footer .form-control {
 	display: block;
 	width: 100%;
 	padding: 6px 12px;
@@ -504,7 +530,7 @@ label {
 	-o-transition: none;
 	transition: none;
 }
-#contact .form-control:focus {
+#footer .form-control:focus {
 	border-color: #999;
 	outline: 0;
 	-webkit-box-shadow: transparent;
@@ -522,28 +548,28 @@ color: #777;
 .form-control:-ms-input-placeholder {
 color: #777;
 }
-#contact .contact-item {
+#footer .footer-item {
 	margin: 20px 0;
 }
-#contact .contact-item span {
+#footer .footer-item span {
 	color: rgba(255,255,255,1);
 	margin-bottom: 10px;
 	display: block;
 }
-#contact .contact-item i.fa {
+#footer .footer-item i.fa {
 	margin-right: 10px;
 }
-#contact .social {
+#footer .social {
 	border-top: 1px solid rgba(255,255,255,0.15);
 	padding-top: 50px;
 	margin-top: 50px;
 	text-align: center;
 }
-#contact .social ul li {
+#footer .social ul li {
 	display: inline-block;
 	margin: 0 20px;
 }
-#contact .social i.fa {
+#footer .social i.fa {
 	font-size: 22px;
 	width: 48px;
 	height: 48px;
@@ -553,15 +579,11 @@ color: #777;
 	border-radius: 50%;
 	transition: all 0.3s;
 }
-#contact .social i.fa:hover {
+#footer .social i.fa:hover {
 	color: #608dfd;
 	background: #fff;
 }
 /* Footer Section*/
-#footer {
-	background: #f6f6f6;
-	padding: 30px 0;
-}
 #footer p {
 	color: #888;
 	font-size: 14px;

@@ -1,42 +1,34 @@
-import React, { useState, useMemo } from 'react'
-import WindowService from '../reusable/WindowService'
+import React from 'react'
+import { Fragment } from 'react'
+// import GitCarf from '../reusable/GitCard'
+// import WindowService from '../reusable/WindowService'
+import GitCard from '../reusable/GitCard'
 
 
 const Services = ({ data }) => {
 
-
-    const [ value, setValue ] = useState('git')
-
-    const dataService = useMemo(() => {
-        return data.filter(item => item.slug === value )
-    },[value, data])
+    console.log(data)
         
     return(
-    <div id="services" className="text-center">
+    <Fragment>
+    <div id="services">
         
         <div className="container">
-        <div className="section-title">
+        <div className="section-title text-center">
         <h2>Nuestros productos y servicios</h2>
         </div>
         <div className="row">
         
         <div className="col">
-        <h3>Puedes consultar nuestros productos en:</h3>    
-            <button className="btn btn-git btn-sep fa-bookmark-o">Catálogo Virutal</button>
         </div>
-            <div>
-                <select
-                    className="form--control--select"
-                    value={value}
-                    onChange={(e) => setValue(e.target.value)}
-                    >
-                    {data.map((service, index) => <option key={`${service.slug}+${index}`} value={service.slug}>{service.title}</option>)}
-                    </select>
-            </div>
-            <WindowService data={dataService} />
+        <div className="dflex--center card--container">
+            {data.map(item => <GitCard props={item}/>)}
+        </div>        
         </div>
     </div>
     </div>
+        <a href="https://practical-turing-793a2f.netlify.app/" target="_blanck"><section className="custom--card--button text-center">Conozca nuestro catálogo de productos en línea.</section></a>
+    </Fragment>
     )
 }
 

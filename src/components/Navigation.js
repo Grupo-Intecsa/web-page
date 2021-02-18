@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navigation = () => {
     return(
-        <nav id="menu" className="navbar navbar-default navbar-fixed-top">
+        <nav id="menu" className="navbar navbar-default navbar-fixed-top custom--shadow--navbar">
         <div className="container">
             <div className="navbar-header">
             <button
@@ -45,14 +45,14 @@ const Navigation = () => {
                 </li> */}
                 <li>
                 <a href="#services" className="page-scroll">
-                    Servicios
+                    Productos y Servicios
                 </a>
                 </li>
-                <li>
+                {/* <li>
                 <a href="#testimonials" className="page-scroll">
                     Testimonio
                 </a>
-                </li>
+                </li> */}
                 {/* <li>
                 <a href="#team" className="page-scroll">
                     Team

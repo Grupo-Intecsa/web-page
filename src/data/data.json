@@ -121,67 +121,13 @@
         }
 
     ],
-    "Testimonials": [{
-            "img": "img/testimonials/liverpool.png",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "Liverpool"
-        },
-        {
-            "img": "img/testimonials/inditex.png",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "Inditex"
-        },
-        {
-            "img": "img/testimonials/carso.png",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "Grupo Carso"
-        },
-        {
-            "img": "img/testimonials/modelo.png",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "Grupo Modelo"
-        },
-        {
-            "img": "img/testimonials/alcione.png",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "Alcione"
-        },
-        {
-            "img": "img/testimonials/naturgy.png",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "Naturgy"
-        },
-        {
-            "img": "img/testimonials/ica.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "ICA"
-        }
-    ],
-    "Team": [{
-            "img": "img/team/01.jpg",
-            "name": "John Doe",
-            "job": "Director"
-        },
-        {
-            "img": "img/team/02.jpg",
-            "name": "Mike Doe",
-            "job": "Senior Designer"
-        }, {
-            "img": "img/team/03.jpg",
-            "name": "Jane Doe",
-            "job": "Senior Designer"
-        },
-        {
-            "img": "img/team/04.jpg",
-            "name": "Karen Doe",
-            "job": "Project Manager"
-        }
-    ],
     "Contact": {
         "address": "Raúl Zárate Machuca Cuevitas, 01220 Ciudad de México, CDMX",
         "link": "https://goo.gl/maps/ahavvUSB89XmrQtSA",
-        "phone": "+52 55 70 11 97",
+        "phone": "+52 55  55 70 11 97",
+        "phone2": "+52 55 52 59 24 85",
         "email": "contacto@grupintecsa.com",
+        "email2": "servicio@grupintecsa.com",
         "facebook": "fb.com",
         "youtube": "youtube.com",
         "maps": "https://goo.gl/maps/ahavvUSB89XmrQtSA"
@@ -206,5 +152,21 @@
             "title": "Instalaciones y Técnica",
             "text": "Instalaciónes eléctricas en industrias y comercios. Dotamos de energía eléctrica a edificios, instalaciones, lugares públicos, infraestructuras, etc. Incluimos los equipos necesarios para asegurar su correcto funcionamiento y la conexión con los aparatos eléctricos correspondientes."
         }
-    ]
+    ],
+    "Productos": [{
+        "img": "img/servicios/main/servicio.png",
+        "title": "Servicios",
+        "content": "Somos especialistas en proyectos 'turn-key', desarrollando ingeniería eléctrica y de detalle para usted, brindandole asesoria técnica y guiandolo durante el proceso hasta la puesta en marcha."
+    },
+    {
+        "img": "img/servicios/main/productos.png",
+        "title": "Productos",
+        "content": "Contamos con un catálogo de más de 3000 productos del ramo eléctrico que ponemos en línea completamente a su disposición, somos distribuidores directos de fabrica de productos marca ABB, ONKA y Finder."
+    },
+    {
+        "img": "img/servicios/main/cert.png",
+        "title": "Certificación",
+        "content": "Primera empresa Mexicana con certificaciones internacionales por parte de nuestro socio comercial ABB, para producción, ensamble y distribución de sus líneas en baja y media tensión."
+    }
+]
 }
