@@ -1,9 +1,11 @@
-import React, { useState, useMemo } from 'react'
-import { Fragment } from 'react'
+import React, { useState, useMemo, Fragment } from 'react'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+
 import GitCarrousel from '../../reusable/GitCarrousel'
-// import GitCarf from '../reusable/GitCard'
-// import WindowService from '../reusable/WindowService'
-// import GitCard from '../../reusable/GitCard'
+
+
 
 // TODO revisar el tema de pasar estado de hijo al padre, boton tipo flecha y disminicion de interador para poder navegar entre productos
 
@@ -22,6 +24,13 @@ const Services = () => {
         setIterador(iterador => iterador + 1)
     }
 
+    const handledMinusClic = () => {
+        if(iterador === 1 ){
+            setIterador(4)
+        }
+        setIterador(iterador => iterador - 1 )
+    }
+
     const currentSlide = useMemo(() => {
 
         let objectSlide = [
@@ -29,7 +38,7 @@ const Services = () => {
             { "id": 1, "object": Carrousel.Obra, "title": "Instalaciones Eléctricas" },
             { "id": 2, "object": Carrousel.Produccion, "title": "Área de Producción" },
             { "id": 3, "object": Carrousel.Tableros, "title": "Integración de Tableros" },
-            { "id": 4, "object": Carrousel.Trasportes, "title": "Renta de Provisionales, Andamiajes y Gruas"},
+            { "id": 4, "object": Carrousel.Trasportes, "title": "Provisionales, Gruas, Plantas de energía"},
 
         ]
     
@@ -47,12 +56,23 @@ const Services = () => {
         </div>
         <div className="row">
         
-        <div className="col dflex--center">
-            <h3 className="text-center">{currentSlide.map(item => item.title)}</h3>
-            <button className="btn-info" onClick={handlePushClic}>IR</button>
+        <div className="dflex--center control--carouse--select">
+            
+            <div className="custom--carousel-title">
+                <button className="btn--carousel--select" onClick={handledMinusClic}>
+                        <FontAwesomeIcon icon={faArrowLeft}>
+                        </FontAwesomeIcon>
+                </button>                    
+                <div>{currentSlide.map(item => item.title )}</div>
+                <button className="btn--carousel--select" onClick={handlePushClic}>
+                        <FontAwesomeIcon icon={faArrowRight}>
+                        </FontAwesomeIcon>
+                </button>
+            </div>
+            
         </div>
         <div className="col">
-            <GitCarrousel slide={currentSlide} setIterador={setIterador} />
+            <GitCarrousel slide={currentSlide} setIterador={setIterador} iterador={iterador} />
         </div>
         </div>
     </div>
