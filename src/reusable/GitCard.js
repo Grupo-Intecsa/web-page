@@ -10,7 +10,7 @@ const GitCard = ({ props }) => {
     <Fragment>
         <section className="container--card">
             <article className="card">
-                <img alt="imagen produccion" src={img} className="img-responsive" />
+                <img alt="imagen produccion" src={img} className="img-responsive" radioGroup={4} />
                 <h2 className="mt3 text--card--title" style={{ color: "black"}}>{title}</h2>
                 <hr />
                 <p className="card--body" style={{ color: "black"}}>

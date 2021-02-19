@@ -1,31 +1,32 @@
+import React, { Component } from 'react'
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+
+
 import './App.css';
 import './index.css'
 import './styles.scss'
 
-// import About from './components/About'
-import Footer from './components/Contacto';
-import Features from './components/Features';
-import Header from './components/Header';
-import Navigation from './components/Navigation';
-import Services from './components/Services';
-// import Testimonial from './components/Testimonial';
 
+const loading = (
+  <div className="pt-3 text-center">
+    <div className="sk-spinner sk-spinner-pulse"></div>
+  </div>
+)
 
-import jsonData from './data/data.json'
+const TheLayout = React.lazy(() => import('./containers/TheLayout'))
 
-function App() {
-
-  return (
-    <div className="App">
-      <Navigation />
-      <Header data={jsonData.Header} />
-      <Features data={jsonData.Features} />
-      {/* <About data={jsonData.About} /> */}
-      <Services data={jsonData.Productos} />
-      {/* <Testimonial data={jsonData.Testimonials} /> */}
-      <Footer data={jsonData.Contact} />
-    </div>
-  );
+class App extends Component{
+  render(){
+    return(
+      <Router>
+        <React.Suspense fallback={loading}>
+            <Switch>
+              <Route path="/" name="Home" render={(props) => <TheLayout {...props } />} />
+            </Switch>
+        </React.Suspense>
+      </Router>
+    )
+  }
 }
 
-export default App;
+export default App

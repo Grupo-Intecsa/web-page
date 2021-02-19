@@ -15,6 +15,11 @@ const Features = ({ data }) => {
                 <img src={d.logo} alt="foto de icono" height={87} className="logo--background" />
                 <h3>{d.title}</h3>
                 <p>{d.text}</p>
+                <ul>
+                    {d?.list && (
+                        d.list.map(item => <li>{item}</li>)
+                    )}
+                </ul>
                 </div>
             ))
             : "Loading..."}
